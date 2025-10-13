@@ -18,17 +18,17 @@ const privacyTranslations = {
           icon: "shield",
           title: "Our Commitment",
           content: [
-            "At Mazunte Connect, we believe your privacy is fundamental. We're committed to being transparent about what data we collect and how we use it.",
-            "This policy explains our practices regarding your personal information when you use our app and services."
+            "At Inner Ascend, we believe your privacy is fundamental. We're committed to being transparent about what data we collect and how we use it.",
+            "This policy explains our practices regarding your personal information when you participate in our program."
           ]
         },
         {
           icon: "database",
           title: "Information We Collect",
           content: [
-            "Email Address: When you join our waitlist or create an account, we collect your email address to communicate with you about Mazunte Connect.",
-            "Usage Data: We collect anonymous usage data to improve the app, such as which features you use and how you navigate the app.",
-            "Location Data: With your permission, we use your location to show you nearby events and places in Mazunte. This data is never shared with third parties."
+            "Email Address: When you enroll or create an account, we collect your email address to communicate with you about Inner Ascend program updates and resources.",
+            "Usage Data: We collect anonymous usage data to improve the program and user experience.",
+            "Program Participation: We track your progress through the program to provide personalized guidance. This data is kept confidential and never shared with third parties."
           ]
         },
         {

@@ -10,43 +10,43 @@ const supportTranslations = {
     ...enTranslations,
     support: {
       title: "How can we help?",
-      subtitle: "Get support for Mazunte Connect",
+      subtitle: "Get support for Inner Ascend",
       backToHome: "Back to Home",
       sections: {
         email: {
           title: "Email Support",
           description: "Send us an email and we'll get back to you within 24 hours",
-          action: "hello@mazunteconnect.com"
+          action: "hello@inner-ascend.com"
         },
         faq: {
           title: "Frequently Asked Questions",
           description: "Find answers to common questions",
           items: [
             {
-              q: "When will Mazunte Connect launch?",
-              a: "We're currently in development and plan to launch soon! Join our waitlist to be notified when we go live."
+              q: "When does the program start?",
+              a: "You can join Inner Ascend at any time! The 12-month curriculum is self-paced with live sessions every Sunday at 5pm CEST."
             },
             {
-              q: "Is the app free?",
-              a: "Yes! Mazunte Connect is free for everyone. We want to make Mazunte accessible to all."
+              q: "What's included in the membership?",
+              a: "The membership includes access to our Patreon community, 12-month step-by-step guide, 2 live calls per month, personalized guidance, exercises, meditations, and daily practices."
             },
             {
-              q: "Can I add my business or event?",
-              a: "Absolutely! Once we launch, you'll be able to add and manage your own listings through the app."
+              q: "Do I need any prior experience with inner work?",
+              a: "No prior experience is needed. Our program is designed to guide you from wherever you are on your journey."
             },
             {
-              q: "Which platforms will be supported?",
-              a: "We're launching on both iOS and Android simultaneously."
+              q: "How much time do I need to commit?",
+              a: "We recommend attending the bi-weekly live sessions (Sunday 5pm CEST) and dedicating time for daily practices and assignments. The program is flexible to fit your schedule."
             }
           ]
         },
         community: {
           title: "Join the Community",
-          description: "Connect with other Mazunte lovers and stay updated on our progress"
+          description: "Connect with other consciousness explorers on the transformation journey"
         },
         docs: {
-          title: "Documentation",
-          description: "Learn more about how to use Mazunte Connect (coming soon)"
+          title: "Program Resources",
+          description: "Access program materials and resources (available to members)"
         }
       }
     }

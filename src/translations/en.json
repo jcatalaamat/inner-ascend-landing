@@ -1,174 +1,193 @@
 {
   "hero": {
-    "title": "Building the Future, One Line at a Time",
-    "subtitle": "Full-Stack Engineer | CTO | Blockchain Developer",
-    "tagline": "Specializing in scalable web applications, crypto integration, and technical leadership",
-    "cta": "View Projects",
-    "secondaryCta": "Get in Touch",
+    "title": "Being Human 101",
+    "subtitle": "The Complete Roadmap to Inner Work",
+    "tagline": "A transformative journey into the depths of your consciousness. Heal core wounds, integrate shadow aspects, and master reality creation.",
+    "cta": "Enroll Now",
+    "secondaryCta": "Learn More",
     "stats": {
-      "experience": "10+ years experience",
-      "projects": "50+ projects delivered",
-      "technologies": "15+ tech stack mastery"
+      "experience": "12 Month Program",
+      "projects": "2 Calls Per Month",
+      "technologies": "Every Sunday 5pm CEST"
     }
   },
   "navigation": {
     "about": "About",
-    "experience": "Experience",
-    "skills": "Skills",
-    "projects": "Projects",
-    "services": "Services",
-    "contact": "Contact"
+    "experience": "What's Inside",
+    "skills": "Transformation",
+    "projects": "Program Features",
+    "services": "Membership",
+    "contact": "Enroll"
   },
   "about": {
-    "title": "Who is Astral Amat?",
-    "intro": "Software engineer with a decade of experience building scalable applications, leading technical teams, and architecting blockchain solutions.",
-    "description": "Former CTO at multiple startups, passionate about Web3, NFTs, and the future of decentralized technology. I bridge the gap between innovative ideas and production-ready solutions.",
+    "title": "About Inner Ascend",
+    "intro": "We are a couple dedicated to the evolution of human consciousness. We spent years researching and experimenting with inner work, transforming our own lives through deep healing and conscious development.",
+    "description": "We believe these tools should be accessible to everyone. We teach complete methodologies for transformation. We provide roadmaps for moving from unconscious patterns to conscious creation. Every practice we share comes from our direct experience healing core wounds, integrating shadow aspects, and mastering reality creation.",
     "highlights": [
-      "Technical Leadership",
-      "Full-Stack Development",
-      "Blockchain Expert",
-      "System Architecture"
+      "Consciousness Evolution",
+      "Deep Healing",
+      "Shadow Integration",
+      "Reality Mastery"
     ]
   },
   "experience": {
-    "title": "Professional Journey",
-    "subtitle": "Building impactful solutions across industries",
+    "title": "Monthly Membership",
+    "subtitle": "What you'll receive in this transformative program",
     "roles": [
       {
-        "title": "Chief Technology Officer",
-        "company": "Tech Startup",
-        "period": "2022 - Present",
-        "description": "Leading technical strategy, team building, and architecture decisions for fast-growing startup."
+        "title": "Identify and Integrate Core Wounds",
+        "company": "Module 01",
+        "period": "Foundation",
+        "description": "Stop unconsciously repeating patterns. Learn to identify and integrate your core wounds instead of being driven by them."
       },
       {
-        "title": "Senior Full-Stack Engineer",
-        "company": "Web3 Company",
-        "period": "2020 - 2022",
-        "description": "Built NFT marketplace and DeFi protocols using React, Node.js, and Solidity."
+        "title": "Reclaim Shadow Aspects",
+        "company": "Module 02",
+        "period": "Integration",
+        "description": "Discover and integrate disowned shadow aspects that drive self-sabotage and projection."
       },
       {
-        "title": "Lead Developer",
-        "company": "Digital Agency",
-        "period": "2018 - 2020",
-        "description": "Architected and delivered 20+ web applications for enterprise clients."
+        "title": "Clear Ancestral Patterns",
+        "company": "Module 03",
+        "period": "Liberation",
+        "description": "Transform ancestral patterns that limit what you believe is possible for someone 'like you'."
       },
       {
-        "title": "Software Engineer",
-        "company": "Tech Company",
-        "period": "2015 - 2018",
-        "description": "Full-stack development using modern JavaScript frameworks and cloud infrastructure."
+        "title": "Transform Subconscious Programming",
+        "company": "Module 04",
+        "period": "Reprogramming",
+        "description": "Clear subconscious programming from childhood and cultural conditioning that shapes your reality."
+      },
+      {
+        "title": "Master Reality Creation",
+        "company": "Module 05",
+        "period": "Expression",
+        "description": "Learn the language of reality creation through conscious expression and intentional manifestation."
+      },
+      {
+        "title": "Quantum Consciousness",
+        "company": "Module 06",
+        "period": "Mastery",
+        "description": "Develop quantum consciousness for deliberate timeline shifting and manifestation."
       }
     ]
   },
   "skills": {
-    "title": "Technical Expertise",
-    "subtitle": "Technologies I work with",
+    "title": "Your Transformation",
+    "subtitle": "What changes when you do this work",
     "categories": {
       "frontend": {
-        "title": "Frontend",
-        "items": ["React", "TypeScript", "Next.js", "Tailwind CSS", "React Native"]
+        "title": "Inner Foundation",
+        "items": ["Core Wound Healing", "Emotional Integration", "Somatic Awareness", "Nervous System Regulation", "Authentic Expression"]
       },
       "backend": {
-        "title": "Backend",
-        "items": ["Node.js", "Python", "PostgreSQL", "MongoDB", "Redis"]
+        "title": "Shadow Work",
+        "items": ["Projection Recognition", "Disowned Parts Integration", "Self-Sabotage Patterns", "Unconscious Drives", "Complete Self-Acceptance"]
       },
       "blockchain": {
-        "title": "Blockchain",
-        "items": ["Solidity", "Web3.js", "Ethers.js", "Smart Contracts", "DeFi"]
+        "title": "Ancestral Healing",
+        "items": ["Lineage Patterns", "Inherited Trauma", "Family System Dynamics", "Generational Liberation", "Legacy Transformation"]
       },
       "devops": {
-        "title": "DevOps",
-        "items": ["Docker", "AWS", "CI/CD", "Kubernetes", "Terraform"]
+        "title": "Conscious Creation",
+        "items": ["Reality Architecture", "Timeline Shifting", "Manifestation Mastery", "Quantum Awareness", "Deliberate Design"]
       }
     }
   },
   "projects": {
-    "title": "Featured Projects",
-    "subtitle": "Portfolio of applications and platforms",
-    "categories": ["All", "NFT", "Crypto", "Web Apps", "Mobile"],
+    "title": "What's Inside",
+    "subtitle": "Your complete transformation toolkit",
+    "categories": ["All", "Core", "Advanced", "Mastery", "Community"],
     "items": [
       {
-        "title": "NFT Marketplace",
-        "category": "NFT",
-        "description": "Full-featured NFT marketplace with minting, trading, and royalties.",
-        "tech": ["React", "Solidity", "Web3", "Node.js"],
+        "title": "Access to Patreon Community",
+        "category": "Community",
+        "description": "Join a supportive community of consciousness explorers on the same transformational journey.",
+        "tech": ["Private Community", "Peer Support", "Shared Journey", "Connection"],
         "link": "#"
       },
       {
-        "title": "DeFi Trading Platform",
-        "category": "Crypto",
-        "description": "Decentralized trading platform with liquidity pools and yield farming.",
-        "tech": ["Next.js", "Ethers.js", "Smart Contracts"],
+        "title": "12-Month Step-by-Step Guide",
+        "category": "Core",
+        "description": "Complete roadmap for transformation. Join anytime and follow the structured progression.",
+        "tech": ["Month-by-Month", "Progressive", "Join Anytime", "Self-Paced"],
         "link": "#"
       },
       {
-        "title": "SaaS Dashboard",
-        "category": "Web Apps",
-        "description": "Enterprise analytics dashboard with real-time data visualization.",
-        "tech": ["React", "TypeScript", "PostgreSQL", "AWS"],
+        "title": "2 Calls Per Month + Assignments",
+        "category": "Core",
+        "description": "Live Zoom sessions every Sunday at 5pm CEST, plus practical assignments for integration.",
+        "tech": ["Live Calls", "Practical Work", "Integration", "Accountability"],
         "link": "#"
       },
       {
-        "title": "Mobile Crypto Wallet",
-        "category": "Mobile",
-        "description": "Secure multi-chain cryptocurrency wallet for iOS and Android.",
-        "tech": ["React Native", "Web3", "Biometrics"],
+        "title": "Personalized Guidance & Q&A",
+        "category": "Advanced",
+        "description": "Get your questions answered and receive personalized guidance for your unique journey.",
+        "tech": ["Personal Support", "Custom Guidance", "Direct Access", "Tailored Advice"],
+        "link": "#"
+      },
+      {
+        "title": "Exercises, Meditations & Guidelines",
+        "category": "Mastery",
+        "description": "Practical tools including exercises, guided meditations, and daily practices for maintaining alignment.",
+        "tech": ["Daily Practices", "Meditations", "Exercises", "Integration Tools"],
         "link": "#"
       }
     ]
   },
   "services": {
-    "title": "What I Offer",
-    "subtitle": "Services for startups and enterprises",
+    "title": "The Membership",
+    "subtitle": "Complete access to the transformation journey",
     "items": [
       {
-        "title": "CTO Consulting",
-        "description": "Technical strategy, team building, and architecture planning for your startup.",
-        "features": ["Tech Stack Selection", "Team Hiring", "System Architecture", "Scalability Planning"]
+        "title": "Live Weekly Sessions",
+        "description": "Join us every Sunday at 5pm CEST on Zoom for deep exploration and transformation.",
+        "features": ["2 Calls Per Month", "Live Q&A Sessions", "Group Energy Work", "Community Support"]
       },
       {
-        "title": "Full-Stack Development",
-        "description": "End-to-end application development from concept to deployment.",
-        "features": ["Web Applications", "Mobile Apps", "API Development", "Database Design"]
+        "title": "Complete Program Access",
+        "description": "Full access to all modules, exercises, meditations, and resources for your journey.",
+        "features": ["12-Month Curriculum", "Video Library", "Guided Meditations", "Practical Exercises"]
       },
       {
-        "title": "Blockchain Integration",
-        "description": "Smart contract development and Web3 integration for your platform.",
-        "features": ["Smart Contracts", "NFT Development", "DeFi Protocols", "Wallet Integration"]
+        "title": "Ongoing Support",
+        "description": "Continuous guidance and support through our private community and personalized feedback.",
+        "features": ["Patreon Community", "Personal Guidance", "Assignment Feedback", "Progress Tracking"]
       }
     ]
   },
   "investment": {
-    "title": "Open for Opportunities",
-    "subtitle": "Looking for investment and collaboration",
-    "description": "I'm actively seeking investment opportunities and partnerships in the crypto, NFT, and Web3 space. Let's build the future together.",
+    "title": "Why This Work Matters Now",
+    "subtitle": "The evolutionary threshold",
+    "description": "We are at an evolutionary threshold. The old ways of being—unconscious, reactive, driven by fear—are no longer sustainable. We need a critical mass of humans operating from healed, integrated consciousness. Inner work is the most essential contribution you can make to humanity's future. Every person who transforms their wounds into wisdom becomes a beacon of possibility for others.",
     "interests": [
-      "Crypto & DeFi Projects",
-      "NFT Platforms",
-      "Web3 Applications",
-      "SaaS Products"
+      "Heal Core Wounds",
+      "Integrate Shadow",
+      "Clear Ancestral Patterns",
+      "Master Reality Creation"
     ],
-    "cta": "Let's Discuss"
+    "cta": "Reserve Your Seat"
   },
   "contact": {
-    "title": "Let's Connect",
-    "subtitle": "Get in touch for opportunities and collaborations",
+    "title": "Ready to Begin?",
+    "subtitle": "Reserve your seat for the complete inner work journey",
     "form": {
       "name": "Your Name",
       "email": "Your Email",
-      "message": "Your Message",
-      "submit": "Send Message"
+      "message": "Tell us about your journey and what brings you to Inner Ascend",
+      "submit": "Reserve My Seat"
     },
     "social": {
-      "linkedin": "LinkedIn",
-      "github": "GitHub",
-      "twitter": "Twitter"
+      "linkedin": "Connect on LinkedIn",
+      "github": "Follow Our Work",
+      "twitter": "Join the Conversation"
     },
-    "email": "hello@astralamat.com"
+    "email": "hello@inner-ascend.com"
   },
   "footer": {
-    "tagline": "Building innovative solutions with code and creativity",
-    "made": "© 2025 Astral Amat - Software Engineer & CTO",
+    "tagline": "Guiding you from wounded to wise, from reactive to sovereign, from victim to conscious creator",
+    "made": "© 2025 Inner Ascend - Being Human 101",
     "rights": "All rights reserved",
     "links": {
       "privacy": "Privacy",

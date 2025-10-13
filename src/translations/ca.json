@@ -1,174 +1,193 @@
 {
   "hero": {
-    "title": "Construint el Futur, Una Línia alhora",
-    "subtitle": "Enginyer Full-Stack | CTO | Desenvolupador Blockchain",
-    "tagline": "Especialitzat en aplicacions web escalables, integració crypto i lideratge tècnic",
-    "cta": "Veure Projectes",
-    "secondaryCta": "Contacta",
+    "title": "Ser Humà 101",
+    "subtitle": "El Full de Ruta Complet cap al Treball Interior",
+    "tagline": "Un viatge transformador cap a les profunditats de la teva consciència. Sana ferides fonamentals, integra aspectes de l'ombra i domina la creació de la realitat.",
+    "cta": "Inscriu-te Ara",
+    "secondaryCta": "Saber Més",
     "stats": {
-      "experience": "10+ anys d'experiència",
-      "projects": "50+ projectes lliurats",
-      "technologies": "15+ tecnologies dominades"
+      "experience": "Programa de 12 Mesos",
+      "projects": "2 Trucades al Mes",
+      "technologies": "Diumenges 5pm CEST"
     }
   },
   "navigation": {
-    "about": "Sobre Mi",
-    "experience": "Experiència",
-    "skills": "Habilitats",
-    "projects": "Projectes",
-    "services": "Serveis",
-    "contact": "Contacte"
+    "about": "Sobre",
+    "experience": "Què Inclou",
+    "skills": "Transformació",
+    "projects": "Característiques",
+    "services": "Membresía",
+    "contact": "Inscriu-te"
   },
   "about": {
-    "title": "Qui és Astral Amat?",
-    "intro": "Enginyer de software amb una dècada d'experiència construint aplicacions escalables, liderant equips tècnics i arquitectant solucions blockchain.",
-    "description": "Ex-CTO en múltiples startups, apassionat per Web3, NFTs i el futur de la tecnologia descentralitzada. Faig de pont entre idees innovadores i solucions production-ready.",
+    "title": "Sobre Inner Ascend",
+    "intro": "Som una parella dedicada a l'evolució de la consciència humana. Vam passar anys investigant i experimentant amb el treball interior, transformant les nostres pròpies vides a través de la sanació profunda i el desenvolupament conscient.",
+    "description": "Creiem que aquestes eines han de ser accessibles per a tothom. Ensenyem metodologies completes per a la transformació. Proporcionem fulls de ruta per passar de patrons inconscients a la creació conscient. Cada pràctica que compartim prové de la nostra experiència directa sanant ferides fonamentals, integrant aspectes de l'ombra i dominant la creació de la realitat.",
     "highlights": [
-      "Lideratge Tècnic",
-      "Desenvolupament Full-Stack",
-      "Expert en Blockchain",
-      "Arquitectura de Sistemes"
+      "Evolució de la Consciència",
+      "Sanació Profunda",
+      "Integració de l'Ombra",
+      "Mestratge de la Realitat"
     ]
   },
   "experience": {
-    "title": "Trajectòria Professional",
-    "subtitle": "Construint solucions impactants en diverses indústries",
+    "title": "Membresía Mensual",
+    "subtitle": "El que rebràs en aquest programa transformador",
     "roles": [
       {
-        "title": "Chief Technology Officer",
-        "company": "Tech Startup",
-        "period": "2022 - Present",
-        "description": "Liderant estratègia tècnica, construcció d'equip i decisions d'arquitectura per startup en ràpid creixement."
+        "title": "Identificar i Integrar Ferides Fonamentals",
+        "company": "Mòdul 01",
+        "period": "Fonamentació",
+        "description": "Deixa de repetir patrons inconscientment. Aprèn a identificar i integrar les teves ferides fonamentals en lloc de ser impulsat per elles."
       },
       {
-        "title": "Enginyer Senior Full-Stack",
-        "company": "Empresa Web3",
-        "period": "2020 - 2022",
-        "description": "Construcció de marketplace NFT i protocols DeFi utilitzant React, Node.js i Solidity."
+        "title": "Recuperar Aspectes de l'Ombra",
+        "company": "Mòdul 02",
+        "period": "Integració",
+        "description": "Descobreix i integra aspectes de l'ombra rebutjats que impulsen l'auto-sabotatge i la projecció."
       },
       {
-        "title": "Lead Developer",
-        "company": "Agència Digital",
-        "period": "2018 - 2020",
-        "description": "Arquitectura i lliurament de 20+ aplicacions web per clients empresarials."
+        "title": "Netejar Patrons Ancestrals",
+        "company": "Mòdul 03",
+        "period": "Alliberament",
+        "description": "Transforma patrons ancestrals que limiten el que creus possible per algú 'com tu'."
       },
       {
-        "title": "Enginyer de Software",
-        "company": "Empresa Tech",
-        "period": "2015 - 2018",
-        "description": "Desenvolupament full-stack utilitzant frameworks JavaScript moderns i infraestructura cloud."
+        "title": "Transformar la Programació Subconscient",
+        "company": "Mòdul 04",
+        "period": "Reprogramació",
+        "description": "Neteja la programació subconscient de la infància i el condicionament cultural que dóna forma a la teva realitat."
+      },
+      {
+        "title": "Dominar la Creació de Realitat",
+        "company": "Mòdul 05",
+        "period": "Expressió",
+        "description": "Aprèn el llenguatge de la creació de realitat a través de l'expressió conscient i la manifestació intencional."
+      },
+      {
+        "title": "Consciència Quàntica",
+        "company": "Mòdul 06",
+        "period": "Mestratge",
+        "description": "Desenvolupa consciència quàntica per al canvi deliberat de línies de temps i la manifestació."
       }
     ]
   },
   "skills": {
-    "title": "Expertesa Tècnica",
-    "subtitle": "Tecnologies amb les que treballo",
+    "title": "La Teva Transformació",
+    "subtitle": "Què canvia quan fas aquest treball",
     "categories": {
       "frontend": {
-        "title": "Frontend",
-        "items": ["React", "TypeScript", "Next.js", "Tailwind CSS", "React Native"]
+        "title": "Fonament Interior",
+        "items": ["Sanació de Ferides", "Integració Emocional", "Consciència Somàtica", "Regulació del Sistema Nerviós", "Expressió Autèntica"]
       },
       "backend": {
-        "title": "Backend",
-        "items": ["Node.js", "Python", "PostgreSQL", "MongoDB", "Redis"]
+        "title": "Treball d'Ombra",
+        "items": ["Reconeixement de Projecció", "Integració de Parts Rebutjades", "Patrons d'Auto-Sabotatge", "Impulsos Inconscients", "Auto-Acceptació Completa"]
       },
       "blockchain": {
-        "title": "Blockchain",
-        "items": ["Solidity", "Web3.js", "Ethers.js", "Smart Contracts", "DeFi"]
+        "title": "Sanació Ancestral",
+        "items": ["Patrons de Llinatge", "Trauma Heretat", "Dinàmiques del Sistema Familiar", "Alliberament Generacional", "Transformació del Llegat"]
       },
       "devops": {
-        "title": "DevOps",
-        "items": ["Docker", "AWS", "CI/CD", "Kubernetes", "Terraform"]
+        "title": "Creació Conscient",
+        "items": ["Arquitectura de Realitat", "Canvi de Línies de Temps", "Mestratge en Manifestació", "Consciència Quàntica", "Disseny Deliberat"]
       }
     }
   },
   "projects": {
-    "title": "Projectes Destacats",
-    "subtitle": "Portfolio d'aplicacions i plataformes",
-    "categories": ["Tots", "NFT", "Crypto", "Web Apps", "Mòbil"],
+    "title": "Què Inclou",
+    "subtitle": "El teu kit complet d'eines de transformació",
+    "categories": ["Tot", "Essencial", "Avançat", "Mestratge", "Comunitat"],
     "items": [
       {
-        "title": "Marketplace NFT",
-        "category": "NFT",
-        "description": "Marketplace NFT complet amb minting, trading i royalties.",
-        "tech": ["React", "Solidity", "Web3", "Node.js"],
+        "title": "Accés a Comunitat Patreon",
+        "category": "Comunitat",
+        "description": "Uneix-te a una comunitat de suport d'exploradors de la consciència en el mateix viatge transformacional.",
+        "tech": ["Comunitat Privada", "Suport entre Iguals", "Viatge Compartit", "Connexió"],
         "link": "#"
       },
       {
-        "title": "Plataforma Trading DeFi",
-        "category": "Crypto",
-        "description": "Plataforma de trading descentralitzada amb liquidity pools i yield farming.",
-        "tech": ["Next.js", "Ethers.js", "Smart Contracts"],
+        "title": "Guia Pas a Pas de 12 Mesos",
+        "category": "Essencial",
+        "description": "Full de ruta complet per a la transformació. Uneix-te en qualsevol moment i segueix la progressió estructurada.",
+        "tech": ["Mes a Mes", "Progressiu", "Uneix-te Quan Vulguis", "Al Teu Ritme"],
         "link": "#"
       },
       {
-        "title": "Dashboard SaaS",
-        "category": "Web Apps",
-        "description": "Dashboard analític empresarial amb visualització de dades en temps real.",
-        "tech": ["React", "TypeScript", "PostgreSQL", "AWS"],
+        "title": "2 Trucades al Mes + Tasques",
+        "category": "Essencial",
+        "description": "Sessions en viu per Zoom tots els diumenges a les 5pm CEST, més tasques pràctiques per a la integració.",
+        "tech": ["Trucades en Viu", "Treball Pràctic", "Integració", "Responsabilitat"],
         "link": "#"
       },
       {
-        "title": "Wallet Crypto Mòbil",
-        "category": "Mòbil",
-        "description": "Wallet de criptomonedes multi-chain segur per iOS i Android.",
-        "tech": ["React Native", "Web3", "Biometrics"],
+        "title": "Orientació Personalitzada i P&R",
+        "category": "Avançat",
+        "description": "Obtén respostes a les teves preguntes i rep orientació personalitzada per al teu viatge únic.",
+        "tech": ["Suport Personal", "Guia Personalitzada", "Accés Directe", "Consells Adaptats"],
+        "link": "#"
+      },
+      {
+        "title": "Exercicis, Meditacions i Guies",
+        "category": "Mestratge",
+        "description": "Eines pràctiques que inclouen exercicis, meditacions guiades i pràctiques diàries per mantenir l'alineació.",
+        "tech": ["Pràctiques Diàries", "Meditacions", "Exercicis", "Eines d'Integració"],
         "link": "#"
       }
     ]
   },
   "services": {
-    "title": "El Que Ofereixo",
-    "subtitle": "Serveis per startups i empreses",
+    "title": "La Membresía",
+    "subtitle": "Accés complet al viatge de transformació",
     "items": [
       {
-        "title": "Consultoria CTO",
-        "description": "Estratègia tècnica, construcció d'equip i planificació d'arquitectura per la teva startup.",
-        "features": ["Selecció de Tech Stack", "Contractació d'Equip", "Arquitectura de Sistemes", "Planificació d'Escalabilitat"]
+        "title": "Sessions Setmanals en Viu",
+        "description": "Uneix-te a nosaltres tots els diumenges a les 5pm CEST en Zoom per a exploració profunda i transformació.",
+        "features": ["2 Trucades al Mes", "Sessions de P&R en Viu", "Treball Energètic Grupal", "Suport Comunitari"]
       },
       {
-        "title": "Desenvolupament Full-Stack",
-        "description": "Desenvolupament d'aplicacions end-to-end des del concepte fins al desplegament.",
-        "features": ["Aplicacions Web", "Apps Mòbils", "Desenvolupament API", "Disseny de Base de Dades"]
+        "title": "Accés Complet al Programa",
+        "description": "Accés total a tots els mòduls, exercicis, meditacions i recursos per al teu viatge.",
+        "features": ["Currículum de 12 Mesos", "Biblioteca de Vídeos", "Meditacions Guiades", "Exercicis Pràctics"]
       },
       {
-        "title": "Integració Blockchain",
-        "description": "Desenvolupament de smart contracts i integració Web3 per la teva plataforma.",
-        "features": ["Smart Contracts", "Desenvolupament NFT", "Protocols DeFi", "Integració de Wallets"]
+        "title": "Suport Continu",
+        "description": "Orientació i suport continuats a través de la nostra comunitat privada i retroalimentació personalitzada.",
+        "features": ["Comunitat Patreon", "Orientació Personal", "Retroalimentació de Tasques", "Seguiment de Progrés"]
       }
     ]
   },
   "investment": {
-    "title": "Obert a Oportunitats",
-    "subtitle": "Buscant inversió i col·laboració",
-    "description": "Estic buscant activament oportunitats d'inversió i col·laboracions en l'espai crypto, NFT i Web3. Construïm el futur junts.",
+    "title": "Per Què Aquest Treball Importa Ara",
+    "subtitle": "El llindar evolutiu",
+    "description": "Estem en un llindar evolutiu. Les velles formes de ser—inconscients, reactives, impulsades per la por—ja no són sostenibles. Necessitem una massa crítica d'humans operant des d'una consciència sanada i integrada. El treball interior és la contribució més essencial que pots fer al futur de la humanitat. Cada persona que transforma les seves ferides en saviesa es converteix en un far de possibilitat per als altres.",
     "interests": [
-      "Projectes Crypto & DeFi",
-      "Plataformes NFT",
-      "Aplicacions Web3",
-      "Productes SaaS"
+      "Sanar Ferides Fonamentals",
+      "Integrar l'Ombra",
+      "Netejar Patrons Ancestrals",
+      "Dominar la Creació de Realitat"
     ],
-    "cta": "Parlem"
+    "cta": "Reserva el Teu Lloc"
   },
   "contact": {
-    "title": "Connectem",
-    "subtitle": "Contacta per oportunitats i col·laboracions",
+    "title": "Preparat per Començar?",
+    "subtitle": "Reserva el teu lloc per al viatge complet de treball interior",
     "form": {
       "name": "El Teu Nom",
       "email": "El Teu Email",
-      "message": "El Teu Missatge",
-      "submit": "Enviar Missatge"
+      "message": "Explica'ns sobre el teu viatge i què et porta a Inner Ascend",
+      "submit": "Reservar el Meu Lloc"
     },
     "social": {
-      "linkedin": "LinkedIn",
-      "github": "GitHub",
-      "twitter": "Twitter"
+      "linkedin": "Connecta a LinkedIn",
+      "github": "Segueix el Nostre Treball",
+      "twitter": "Uneix-te a la Conversa"
     },
-    "email": "hello@astralamat.com"
+    "email": "hello@inner-ascend.com"
   },
   "footer": {
-    "tagline": "Construint solucions innovadores amb codi i creativitat",
-    "made": "© 2025 Astral Amat - Enginyer de Software & CTO",
+    "tagline": "Guiant-te de ferit a savi, de reactiu a sobirà, de víctima a creador conscient",
+    "made": "© 2025 Inner Ascend - Ser Humà 101",
     "rights": "Tots els drets reservats",
     "links": {
       "privacy": "Privacitat",
