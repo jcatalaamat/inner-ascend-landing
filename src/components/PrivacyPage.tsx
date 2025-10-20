@@ -1,180 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Globe, Shield, Lock, Eye, Database, Users, Bell } from 'lucide-react';
-import enTranslations from '../translations/en.json';
-import esTranslations from '../translations/es.json';
+import { ArrowLeft, Shield, Lock, Eye, Database, Users, Bell } from 'lucide-react';
 
-// Extend translations with privacy page content
-const privacyTranslations = {
-  en: {
-    ...enTranslations,
-    privacy: {
-      title: "Privacy Policy",
-      subtitle: "How we protect and handle your data",
-      backToHome: "Back to Home",
-      lastUpdated: "Last Updated: October 2025",
-      sections: [
-        {
-          icon: "shield",
-          title: "Our Commitment",
-          content: [
-            "At Inner Ascend, we believe your privacy is fundamental. We're committed to being transparent about what data we collect and how we use it.",
-            "This policy explains our practices regarding your personal information when you participate in our program."
-          ]
-        },
-        {
-          icon: "database",
-          title: "Information We Collect",
-          content: [
-            "Email Address: When you enroll or create an account, we collect your email address to communicate with you about Inner Ascend program updates and resources.",
-            "Usage Data: We collect anonymous usage data to improve the program and user experience.",
-            "Program Participation: We track your progress through the program to provide personalized guidance. This data is kept confidential and never shared with third parties."
-          ]
-        },
-        {
-          icon: "lock",
-          title: "How We Use Your Information",
-          content: [
-            "To provide and improve our services",
-            "To send you updates about events and features (you can unsubscribe anytime)",
-            "To personalize your experience in the app",
-            "To ensure the security and integrity of our platform",
-            "We never sell your personal data to third parties"
-          ]
-        },
-        {
-          icon: "eye",
-          title: "Data Sharing",
-          content: [
-            "We do not sell, rent, or share your personal information with third parties for their marketing purposes.",
-            "We may share anonymized, aggregated data with event organizers and businesses to help them understand their audience.",
-            "We use trusted service providers (like email services) who are bound by confidentiality agreements."
-          ]
-        },
-        {
-          icon: "users",
-          title: "Your Rights",
-          content: [
-            "Access: You can request a copy of your personal data at any time",
-            "Correction: You can update or correct your information through the app",
-            "Deletion: You can request deletion of your account and data",
-            "Opt-out: You can unsubscribe from marketing emails at any time",
-            "Contact us at hello@mazunteconnect.com to exercise these rights"
-          ]
-        },
-        {
-          icon: "bell",
-          title: "Cookies and Tracking",
-          content: [
-            "We use essential cookies to make the app function properly.",
-            "We use analytics to understand how people use Mazunte Connect so we can make it better.",
-            "You can disable cookies in your browser settings, though some features may not work properly."
-          ]
-        },
-        {
-          icon: "shield",
-          title: "Security",
-          content: [
-            "We use industry-standard security measures to protect your data.",
-            "Your data is encrypted in transit and at rest.",
-            "We regularly review and update our security practices.",
-            "However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security."
-          ]
-        }
-      ],
-      contact: {
-        title: "Questions?",
-        description: "If you have any questions about this Privacy Policy, please contact us at:",
-        email: "hello@mazunteconnect.com"
-      }
-    }
-  },
-  es: {
-    ...esTranslations,
-    privacy: {
-      title: "Política de Privacidad",
-      subtitle: "Cómo protegemos y manejamos tus datos",
-      backToHome: "Volver al Inicio",
-      lastUpdated: "Última Actualización: Octubre 2025",
-      sections: [
-        {
-          icon: "shield",
-          title: "Nuestro Compromiso",
-          content: [
-            "En Mazunte Connect, creemos que tu privacidad es fundamental. Nos comprometemos a ser transparentes sobre qué datos recopilamos y cómo los usamos.",
-            "Esta política explica nuestras prácticas con respecto a tu información personal cuando usas nuestra app y servicios."
-          ]
-        },
-        {
-          icon: "database",
-          title: "Información que Recopilamos",
-          content: [
-            "Correo Electrónico: Cuando te unes a nuestra lista de espera o creas una cuenta, recopilamos tu dirección de correo electrónico para comunicarnos contigo sobre Mazunte Connect.",
-            "Datos de Uso: Recopilamos datos de uso anónimos para mejorar la app, como qué funciones usas y cómo navegas por la app.",
-            "Datos de Ubicación: Con tu permiso, usamos tu ubicación para mostrarte eventos y lugares cercanos en Mazunte. Estos datos nunca se comparten con terceros."
-          ]
-        },
-        {
-          icon: "lock",
-          title: "Cómo Usamos tu Información",
-          content: [
-            "Para proporcionar y mejorar nuestros servicios",
-            "Para enviarte actualizaciones sobre eventos y funciones (puedes cancelar la suscripción en cualquier momento)",
-            "Para personalizar tu experiencia en la app",
-            "Para garantizar la seguridad e integridad de nuestra plataforma",
-            "Nunca vendemos tus datos personales a terceros"
-          ]
-        },
-        {
-          icon: "eye",
-          title: "Compartir Datos",
-          content: [
-            "No vendemos, alquilamos ni compartimos tu información personal con terceros para sus fines de marketing.",
-            "Podemos compartir datos anónimos y agregados con organizadores de eventos y negocios para ayudarles a entender a su audiencia.",
-            "Usamos proveedores de servicios confiables (como servicios de correo electrónico) que están sujetos a acuerdos de confidencialidad."
-          ]
-        },
-        {
-          icon: "users",
-          title: "Tus Derechos",
-          content: [
-            "Acceso: Puedes solicitar una copia de tus datos personales en cualquier momento",
-            "Corrección: Puedes actualizar o corregir tu información a través de la app",
-            "Eliminación: Puedes solicitar la eliminación de tu cuenta y datos",
-            "Cancelación: Puedes cancelar la suscripción a correos de marketing en cualquier momento",
-            "Contáctanos en hello@mazunteconnect.com para ejercer estos derechos"
-          ]
-        },
-        {
-          icon: "bell",
-          title: "Cookies y Seguimiento",
-          content: [
-            "Usamos cookies esenciales para que la app funcione correctamente.",
-            "Usamos análisis para entender cómo las personas usan Mazunte Connect para poder mejorarlo.",
-            "Puedes deshabilitar las cookies en la configuración de tu navegador, aunque algunas funciones pueden no funcionar correctamente."
-          ]
-        },
-        {
-          icon: "shield",
-          title: "Seguridad",
-          content: [
-            "Usamos medidas de seguridad estándar de la industria para proteger tus datos.",
-            "Tus datos están encriptados en tránsito y en reposo.",
-            "Revisamos y actualizamos regularmente nuestras prácticas de seguridad.",
-            "Sin embargo, ningún método de transmisión por internet es 100% seguro, y no podemos garantizar seguridad absoluta."
-          ]
-        }
-      ],
-      contact: {
-        title: "¿Preguntas?",
-        description: "Si tienes alguna pregunta sobre esta Política de Privacidad, contáctanos en:",
-        email: "hello@mazunteconnect.com"
-      }
-    }
-  }
-};
-
-const iconMap = {
+const iconMap: Record<string, typeof Shield> = {
   shield: Shield,
   lock: Lock,
   eye: Eye,
@@ -184,10 +12,12 @@ const iconMap = {
 };
 
 export default function PrivacyPage() {
-  const [language, setLanguage] = useState<'en' | 'es'>('en');
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
-  const t = privacyTranslations[language];
+  useEffect(() => {
+    // Scroll to top when page loads
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -198,26 +28,90 @@ export default function PrivacyPage() {
   }, []);
 
   const spotlightStyle = {
-    background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(251, 146, 60, 0.15), transparent 40%)`
+    background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(139, 123, 247, 0.15), transparent 40%)`
   };
 
+  const sections = [
+    {
+      icon: "shield",
+      title: "Our Commitment",
+      content: [
+        "At Inner Ascend, we believe your privacy is fundamental. We're committed to being transparent about what data we collect and how we use it.",
+        "This policy explains our practices regarding your personal information when you use our app and participate in our program."
+      ]
+    },
+    {
+      icon: "database",
+      title: "Information We Collect",
+      content: [
+        "Email Address: When you create an account, we collect your email address to communicate with you about Inner Ascend.",
+        "Usage Data: We collect anonymous usage data to improve the app and your experience.",
+        "Program Progress: We track your journey through the modules to provide personalized guidance. This data is confidential and never shared."
+      ]
+    },
+    {
+      icon: "lock",
+      title: "How We Use Your Information",
+      content: [
+        "To provide and improve our services",
+        "To send you updates (you can unsubscribe anytime)",
+        "To personalize your spiritual practice experience",
+        "To ensure the security of our platform",
+        "We never sell your personal data to third parties"
+      ]
+    },
+    {
+      icon: "eye",
+      title: "Data Sharing",
+      content: [
+        "We do not sell, rent, or share your personal information with third parties for marketing purposes.",
+        "We use trusted service providers (like email services) who are bound by confidentiality agreements.",
+        "We may share anonymized, aggregated data for research and improvement purposes only."
+      ]
+    },
+    {
+      icon: "users",
+      title: "Your Rights",
+      content: [
+        "Access: You can request a copy of your personal data anytime",
+        "Correction: You can update or correct your information through the app",
+        "Deletion: You can request deletion of your account and data",
+        "Unsubscribe: You can opt out of marketing emails anytime",
+        "Contact us at hello@inner-ascend.com to exercise these rights"
+      ]
+    },
+    {
+      icon: "bell",
+      title: "Cookies and Tracking",
+      content: [
+        "We use essential cookies to make the app function properly.",
+        "We use analytics to understand how people use Inner Ascend so we can improve it.",
+        "You can disable cookies in your browser settings, though some features may not work properly."
+      ]
+    },
+    {
+      icon: "shield",
+      title: "Security",
+      content: [
+        "We use industry-standard security measures to protect your data.",
+        "Your data is encrypted in transit and at rest.",
+        "We regularly review and update our security practices.",
+        "However, no internet transmission method is 100% secure, and we cannot guarantee absolute security."
+      ]
+    }
+  ];
+
   return (
-    <div className="min-h-screen bg-black text-white overflow-hidden relative">
-      {/* Animated mesh background */}
-      <div className="fixed inset-0 opacity-30">
-        <div className="absolute top-0 -left-4 w-96 h-96 bg-orange-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{animationDuration: '7s'}}></div>
-        <div className="absolute top-0 -right-4 w-96 h-96 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{animationDuration: '9s', animationDelay: '2s'}}></div>
-        <div className="absolute -bottom-8 left-20 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{animationDuration: '11s', animationDelay: '4s'}}></div>
+    <div className="min-h-screen bg-cosmic-black text-cosmic-silver overflow-hidden relative">
+      {/* Animated cosmic background */}
+      <div className="fixed inset-0 opacity-20">
+        <div className="absolute top-0 -left-4 w-96 h-96 bg-cosmic-violet rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{animationDuration: '7s'}}></div>
+        <div className="absolute top-0 -right-4 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{animationDuration: '9s', animationDelay: '2s'}}></div>
+        <div className="absolute -bottom-8 left-20 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{animationDuration: '11s', animationDelay: '4s'}}></div>
       </div>
 
       {/* Mouse spotlight effect */}
       <div className="fixed inset-0 pointer-events-none" style={spotlightStyle}></div>
-
-      {/* Grid overlay */}
-      <div className="fixed inset-0 opacity-5" style={{
-        backgroundImage: 'linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)',
-        backgroundSize: '50px 50px'
-      }}></div>
 
       <div className="relative z-10">
         {/* Back Button */}
@@ -227,32 +121,21 @@ export default function PrivacyPage() {
             className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 hover:bg-white/20 transition-all"
           >
             <ArrowLeft className="w-4 h-4" />
-            <span className="text-sm font-medium">{t.privacy.backToHome}</span>
+            <span className="text-sm font-medium">Back to Home</span>
           </Link>
-        </div>
-
-        {/* Language Toggle */}
-        <div className="fixed top-4 right-4 z-50">
-          <button
-            onClick={() => setLanguage(language === 'en' ? 'es' : 'en')}
-            className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-xl border border-white/20 hover:bg-white/20 transition-all"
-          >
-            <Globe className="w-4 h-4" />
-            <span className="text-sm font-medium">{language === 'en' ? 'EN' : 'ES'}</span>
-          </button>
         </div>
 
         {/* Hero Section */}
         <div className="container mx-auto px-4 pt-16 pb-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-orange-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">
-              {t.privacy.title}
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-cosmic-violet via-purple-400 to-cosmic-integration bg-clip-text text-transparent">
+              Privacy Policy
             </h1>
             <p className="text-xl text-gray-400 mb-4">
-              {t.privacy.subtitle}
+              How we protect and handle your data
             </p>
             <p className="text-sm text-gray-500">
-              {t.privacy.lastUpdated}
+              Last Updated: October 2025
             </p>
           </div>
         </div>
@@ -260,16 +143,16 @@ export default function PrivacyPage() {
         {/* Content Sections */}
         <div className="container mx-auto px-4 py-8">
           <div className="max-w-4xl mx-auto space-y-8">
-            {t.privacy.sections.map((section, index) => {
-              const IconComponent = iconMap[section.icon as keyof typeof iconMap] || Shield;
+            {sections.map((section, index) => {
+              const IconComponent = iconMap[section.icon] || Shield;
               const gradients = [
-                'from-orange-500 to-pink-500',
-                'from-pink-500 to-purple-500',
-                'from-purple-500 to-blue-500',
-                'from-blue-500 to-cyan-500',
-                'from-cyan-500 to-green-500',
-                'from-green-500 to-emerald-500',
-                'from-emerald-500 to-orange-500'
+                'from-cosmic-violet to-purple-500',
+                'from-purple-500 to-cosmic-integration',
+                'from-cosmic-integration to-blue-500',
+                'from-blue-500 to-cosmic-violet',
+                'from-cosmic-violet to-purple-500',
+                'from-purple-500 to-cosmic-integration',
+                'from-cosmic-integration to-blue-500'
               ];
               const gradient = gradients[index % gradients.length];
 
@@ -286,7 +169,7 @@ export default function PrivacyPage() {
                       <div className="flex-1">
                         <h3 className="text-2xl font-bold mb-4">{section.title}</h3>
                         <div className="space-y-3">
-                          {section.content.map((paragraph, pIndex) => (
+                          {section.content.map((paragraph: string, pIndex: number) => (
                             <p key={pIndex} className="text-gray-400 leading-relaxed">
                               {paragraph}
                             </p>
@@ -301,15 +184,15 @@ export default function PrivacyPage() {
 
             {/* Contact Section */}
             <div className="group relative">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 rounded-3xl blur opacity-30 group-hover:opacity-50 transition duration-500"></div>
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-cosmic-violet via-purple-500 to-cosmic-integration rounded-3xl blur opacity-30 group-hover:opacity-50 transition duration-500"></div>
               <div className="relative bg-zinc-900/90 backdrop-blur-xl rounded-3xl border border-white/5 p-8 text-center">
-                <h3 className="text-2xl font-bold mb-4">{t.privacy.contact.title}</h3>
-                <p className="text-gray-400 mb-4">{t.privacy.contact.description}</p>
+                <h3 className="text-2xl font-bold mb-4">Questions?</h3>
+                <p className="text-gray-400 mb-4">If you have any questions about this Privacy Policy, contact us at:</p>
                 <a
-                  href={`mailto:${t.privacy.contact.email}`}
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-xl font-semibold hover:shadow-2xl hover:shadow-orange-500/50 transform hover:scale-105 transition-all"
+                  href="mailto:hello@inner-ascend.com"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cosmic-violet to-purple-500 text-white rounded-xl font-semibold hover:shadow-2xl hover:shadow-cosmic-violet/50 transform hover:scale-105 transition-all"
                 >
-                  {t.privacy.contact.email}
+                  hello@inner-ascend.com
                 </a>
               </div>
             </div>
@@ -320,7 +203,7 @@ export default function PrivacyPage() {
         <div className="container mx-auto px-4 py-16">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-gray-500">
-              {t.footer.made}
+              © 2025 Inner Ascend • Being Human 101
             </p>
           </div>
         </div>
