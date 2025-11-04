@@ -13,6 +13,16 @@ export default {
           'violet': '#8B7BF7',
           'silver': '#E8E6F0',
           'integration': '#4ECDC4',
+        },
+        'warm': {
+          'gold': '#D4AF37',
+          'gold-light': '#F4E4C1',
+          'peach': '#FFB88C',
+          'coral': '#FF9B71',
+          'purple': '#9B7EDE',
+          'purple-light': '#B695F8',
+          'earth': '#8B7355',
+          'sage': '#9CAF88',
         }
       },
     },

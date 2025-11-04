@@ -25,20 +25,20 @@ export default function SupportPage() {
 
   const faqItems = [
     {
-      q: "When can I start using Inner Ascend?",
-      a: "You can download Inner Ascend and start Module 1 for free anytime! Premium membership unlocks all 16 modules immediately."
+      q: "How do I join Inner Ascend?",
+      a: "Visit our Membership page to explore our three tiers: Community Member (€22-€88/month), Academy Member ($197-$397/month), or apply to become a Founding Member. Each tier offers different levels of access to our curriculum, community calls, and healing resources."
     },
     {
-      q: "What's included in the Premium membership?",
-      a: "Premium includes all 16 modules (90-120 days of content), 7 guided meditations, 100+ journal prompts, daily cosmic guidance, full progress tracking, and achievement badges."
+      q: "What's included in membership?",
+      a: "All memberships include access to monthly community calls and our service exchange marketplace. Academy members get the full Being Human 101 curriculum (16 modules), 97 healing practices library, and personalized spiritual guidance tools."
     },
     {
-      q: "How does the 7-day free trial work?",
-      a: "Start your Premium trial for 7 days completely free. After the trial ends, you'll be charged $17/month. You can cancel anytime before the trial ends with no charge."
+      q: "What is Being Human 101?",
+      a: "Being Human 101 is our comprehensive 16-week trauma healing curriculum. It combines trauma-informed therapy, energy healing, and somatic practices to guide you through shadow work, ancestral healing, and personal transformation."
     },
     {
-      q: "Can I cancel my subscription?",
-      a: "Yes! You can cancel anytime through the app settings. If you cancel, you'll have access until the end of your billing period."
+      q: "Can I cancel my membership?",
+      a: "Yes! You can cancel anytime. If you cancel, you'll have access until the end of your billing period."
     },
     {
       q: "Do I need astrology knowledge?",
@@ -46,19 +46,19 @@ export default function SupportPage() {
     },
     {
       q: "Is this a replacement for therapy?",
-      a: "No. Inner Ascend is a self-guided spiritual practice tool. It complements therapy and professional mental health support but doesn't replace it."
+      a: "No. Inner Ascend is a self-guided spiritual practice and community platform. It complements therapy and professional mental health support but doesn't replace it."
     },
     {
-      q: "What if I miss a day?",
-      a: "Life happens! Your progress is saved, and you can pick up exactly where you left off. Streaks are meant to motivate, not punish."
+      q: "How do the community calls work?",
+      a: "Members gather twice a month for live community calls including teaching sessions, integration circles, and shadow work practices. These are active healing containers, not passive webinars."
     },
     {
-      q: "Is there a community feature?",
-      a: "Not yet! Version 1 focuses on your personal journey. We're planning community features for 2026."
+      q: "What is the service exchange marketplace?",
+      a: "The marketplace allows members to offer and receive services, goods, and skills through bartering and energy exchange—creating an alternative economy based on contribution rather than traditional money."
     },
     {
       q: "What devices does Inner Ascend support?",
-      a: "Inner Ascend is available on both iOS (iPhone/iPad) and Android devices. We're working on a web version for 2026."
+      a: "The mobile app is available on both iOS (iPhone/iPad) and Android devices. The web platform can be accessed from any browser."
     },
     {
       q: "How do I contact support?",
