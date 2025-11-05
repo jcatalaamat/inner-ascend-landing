@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Sparkles, Heart, Users, BookOpen, Sprout, TreePine, Star, ArrowRight, Network } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 
 function CommunityPage() {
   return (
