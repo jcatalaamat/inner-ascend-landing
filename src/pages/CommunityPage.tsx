@@ -1,371 +1,314 @@
 import { Link } from 'react-router-dom';
-import { Sparkles, Heart, Users, BookOpen, Sprout, TreePine, Star, ArrowRight, Network } from 'lucide-react';
+import { Heart, Users, BookOpen, Sprout, TreePine, Star, ArrowRight, Network } from 'lucide-react';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 function CommunityPage() {
   return (
-    <div className="min-h-screen bg-cosmic-black text-cosmic-silver overflow-hidden relative">
-      {/* Animated cosmic background */}
-      <div className="fixed inset-0 opacity-20">
-        <div className="absolute top-0 -left-4 w-96 h-96 bg-cosmic-violet rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{animationDuration: '7s'}}></div>
-        <div className="absolute top-0 -right-4 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{animationDuration: '9s', animationDelay: '2s'}}></div>
-        <div className="absolute -bottom-8 left-20 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{animationDuration: '11s', animationDelay: '4s'}}></div>
-      </div>
+    <div className="min-h-screen bg-brand-bg text-brand-text">
+      <Navigation currentPage="/community" />
 
-      {/* Stars overlay */}
-      <div className="fixed inset-0 opacity-30" style={{
-        backgroundImage: 'radial-gradient(2px 2px at 20% 30%, white, transparent), radial-gradient(2px 2px at 60% 70%, white, transparent), radial-gradient(1px 1px at 50% 50%, white, transparent), radial-gradient(1px 1px at 80% 10%, white, transparent), radial-gradient(2px 2px at 90% 60%, white, transparent)',
-        backgroundSize: '200px 200px'
-      }}></div>
+      {/* Hero Section */}
+      <section className="pt-32 pb-24 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-display mb-6 leading-tight">
+            A Community of Healers, Teachers, and Seekers
+          </h1>
+          <p className="text-body-lg text-brand-muted leading-relaxed">
+            Meet the humans behind Inner Ascend. Some are healing. Some are teaching. All are doing the work.
+          </p>
+        </div>
+      </section>
 
-      <div className="relative z-10">
-        {/* Navigation */}
-        <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-cosmic-black/30 border-b border-cosmic-silver/10">
-          <div className="container mx-auto px-4">
-            <div className="flex items-center justify-between h-20">
-              <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-                <Sparkles className="w-8 h-8 text-cosmic-violet" />
-                <span className="text-xl font-bold bg-gradient-to-r from-cosmic-violet via-purple-400 to-cosmic-integration bg-clip-text text-transparent">
-                  INNER ASCEND
-                </span>
-              </Link>
+      {/* Section 1: Founder Story - Why Train Facilitators */}
+      <section className="py-24 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            {/* Left: Founder photo placeholder */}
+            <div className="bg-brand-surface rounded-3xl aspect-square flex items-center justify-center hover:shadow-2xl transition-all">
+              <div className="text-center space-y-4 p-8">
+                <div className="w-20 h-20 bg-accent-gold/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <span className="text-5xl">🌅</span>
+                </div>
+                <p className="text-brand-muted text-lg">Founder Photo</p>
+                <p className="text-brand-muted/70 text-sm">
+                  (In ceremony, nature, or authentic stillness)
+                </p>
+              </div>
+            </div>
 
-              <div className="hidden md:flex items-center gap-8">
-                <Link to="/journey" className="text-gray-400 hover:text-white transition-colors">
-                  The Journey
-                </Link>
-                <Link to="/community" className="text-white font-semibold">
-                  Community
-                </Link>
-                <Link to="/membership" className="text-gray-400 hover:text-white transition-colors">
-                  Membership
-                </Link>
-                <Link to="/practice" className="text-gray-400 hover:text-white transition-colors">
-                  Practice
-                </Link>
-                <Link to="/membership" className="px-6 py-2 bg-gradient-to-r from-cosmic-violet to-purple-500 rounded-full font-semibold hover:shadow-lg hover:shadow-cosmic-violet/50 transition-all">
-                  Join Us
-                </Link>
+            {/* Right: Founder story */}
+            <div className="space-y-6">
+              <h2 className="text-h1 mb-8">
+                Why I'm Training Facilitators, Not Just Healing People
+              </h2>
+
+              <div className="space-y-4 text-body text-brand-muted leading-relaxed">
+                <p>
+                  Early on, I realized something crucial: <span className="text-accent-secondary font-semibold">I can't hold space for everyone alone</span>.
+                </p>
+
+                <p>
+                  I've done my own deep healing work. I've trained in trauma-informed practices, somatic healing, shadow work. I could offer circles, 1-on-1 sessions, support. But there's a limit to how many humans one person can hold.
+                </p>
+
+                <p>
+                  That's when the vision became clear: <span className="text-accent-gold font-semibold">Train facilitators → they train others → exponential healing</span>.
+                </p>
+
+                <p>
+                  The new paradigm we're building doesn't need one guru at the top. It needs <span className="text-accent-primary font-semibold">hundreds of trained facilitators</span> holding space in their communities, in physical villages, in circles around the world.
+                </p>
+
+                <p>
+                  So I built Inner Ascend as a <span className="text-accent-primary font-semibold">training school</span>. Members join to heal themselves. Some discover they want to hold space for others. They enter facilitator training. They learn trauma-informed practices, somatic work, how to create safe containers. They start co-facilitating circles with mentors. Eventually, they hold their own circles, offer 1-on-1 sessions, train the next generation.
+                </p>
+
+                <p>
+                  The monthly membership (starting at €22) makes this training accessible. You don't need to drop €5,000 on a retreat to become a facilitator. You can learn while you heal, in community, over time.
+                </p>
+
+                <p className="text-accent-gold font-semibold text-body-lg pt-4 border-l-4 border-accent-gold pl-6 italic">
+                  "I didn't build Inner Ascend to be the teacher forever. I built it to train a generation of facilitators who will train the next generation. This is a lineage, not a leader."
+                </p>
+
+                <p className="pt-4">
+                  Physical villages need trained space holders. Online communities need facilitators who've done the work themselves. This is infrastructure for the future we're building.
+                </p>
+
+                <p className="text-brand-muted/70 italic text-body-sm">
+                  — The Founder (name + photo coming soon)
+                </p>
               </div>
             </div>
           </div>
-        </nav>
+        </div>
+      </section>
 
-        {/* Hero Section */}
-        <section className="pt-32 pb-20 px-4">
-          <div className="container mx-auto max-w-4xl text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              <span className="bg-gradient-to-r from-warm-gold via-warm-coral to-warm-purple bg-clip-text text-transparent">
-                A Community of Healers, Teachers, and Seekers
-              </span>
-            </h1>
-            <p className="text-2xl text-gray-300 leading-relaxed">
-              Meet the humans behind Inner Ascend. Some are healing. Some are teaching. All are doing the work.
+      {/* Section 2: Current Facilitators */}
+      <section className="py-24 px-6 bg-brand-surface/30">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-h1 mb-6">
+              Meet Our Facilitators
+            </h2>
+            <p className="text-body-lg text-brand-muted">
+              These are the humans holding space for our circles. They started as members. Now they teach.
             </p>
           </div>
-        </section>
 
-        {/* Section 1: Founder Story - Why Train Facilitators */}
-        <section className="py-32 px-4">
-          <div className="container mx-auto max-w-6xl">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              {/* Left: Founder photo placeholder */}
-              <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-warm-gold via-warm-coral to-warm-purple rounded-2xl blur opacity-30 group-hover:opacity-40 transition"></div>
-                <div className="relative bg-white/5 rounded-2xl aspect-square flex items-center justify-center border border-warm-gold/20 hover:border-warm-gold/40 transition-all">
-                  <div className="text-center space-y-4 p-8">
-                    <div className="text-6xl mb-4">🌅</div>
-                    <p className="text-gray-400 text-lg">Founder Photo</p>
-                    <p className="text-gray-500 text-sm">
-                      (In ceremony, nature, or authentic stillness)
-                    </p>
-                  </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Facilitator Card 1 */}
+            <div className="bg-brand-surface rounded-3xl p-8 hover:shadow-2xl transition-all h-full flex flex-col">
+              {/* Photo placeholder */}
+              <div className="bg-accent-primary/5 rounded-2xl aspect-square flex items-center justify-center mb-6 border border-brand-border">
+                <div className="text-center">
+                  <div className="text-5xl mb-2">👤</div>
+                  <p className="text-body-sm text-brand-muted/70">Photo</p>
                 </div>
               </div>
 
-              {/* Right: Founder story */}
-              <div className="space-y-6">
-                <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-warm-gold to-warm-coral bg-clip-text text-transparent">
-                  Why I'm Training Facilitators, Not Just Healing People
-                </h2>
+              <h3 className="text-h3 mb-2">Sarah Martinez</h3>
+              <p className="text-accent-primary font-semibold text-body-sm mb-4">Circle Facilitator & 1-on-1 Practitioner</p>
 
-                <div className="space-y-4 text-lg text-gray-300 leading-relaxed">
-                  <p>
-                    Early on, I realized something crucial: <span className="text-warm-coral font-semibold">I can't hold space for everyone alone</span>.
-                  </p>
+              <div className="space-y-3 mb-6 text-body-sm text-brand-muted">
+                <p><span className="text-brand-muted/70">Member since:</span> January 2024</p>
+                <p><span className="text-brand-muted/70">Facilitator since:</span> October 2024</p>
+              </div>
 
-                  <p>
-                    I've done my own deep healing work. I've trained in trauma-informed practices, somatic healing, shadow work. I could offer circles, 1-on-1 sessions, support. But there's a limit to how many humans one person can hold.
-                  </p>
+              <div className="mb-6">
+                <p className="text-body-sm font-semibold text-brand-muted/70 mb-2">Offers:</p>
+                <ul className="space-y-1 text-body-sm text-brand-muted">
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent-primary mt-1">•</span>
+                    <span>Weekly shadow work circles</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent-primary mt-1">•</span>
+                    <span>1-on-1 deep dive sessions</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent-primary mt-1">•</span>
+                    <span>Text support packages</span>
+                  </li>
+                </ul>
+              </div>
 
-                  <p>
-                    That's when the vision became clear: <span className="text-warm-gold font-semibold">Train facilitators → they train others → exponential healing</span>.
-                  </p>
+              <div className="mb-6">
+                <p className="text-body-sm font-semibold text-brand-muted/70 mb-1">Focus:</p>
+                <p className="text-body-sm text-brand-muted">Shadow work, somatic healing, ancestral patterns</p>
+              </div>
 
-                  <p>
-                    The new paradigm we're building doesn't need one guru at the top. It needs <span className="text-warm-purple font-semibold">hundreds of trained facilitators</span> holding space in their communities, in physical villages, in circles around the world.
-                  </p>
+              <div className="mt-auto pt-6 border-t border-brand-border">
+                <p className="text-body-sm text-brand-muted italic leading-relaxed">
+                  "I joined to heal my own trauma. Now I get to hold space for others doing the same work. This lineage saved my life, and now I'm passing it forward."
+                </p>
+              </div>
+            </div>
 
-                  <p>
-                    So I built Inner Ascend as a <span className="text-cosmic-integration font-semibold">training school</span>. Members join to heal themselves. Some discover they want to hold space for others. They enter facilitator training. They learn trauma-informed practices, somatic work, how to create safe containers. They start co-facilitating circles with mentors. Eventually, they hold their own circles, offer 1-on-1 sessions, train the next generation.
-                  </p>
-
-                  <p>
-                    The monthly membership (starting at €22) makes this training accessible. You don't need to drop €5,000 on a retreat to become a facilitator. You can learn while you heal, in community, over time.
-                  </p>
-
-                  <p className="text-warm-gold font-semibold text-xl pt-4 border-l-4 border-warm-gold pl-6 italic">
-                    "I didn't build Inner Ascend to be the teacher forever. I built it to train a generation of facilitators who will train the next generation. This is a lineage, not a leader."
-                  </p>
-
-                  <p className="pt-4">
-                    Physical villages need trained space holders. Online communities need facilitators who've done the work themselves. This is infrastructure for the future we're building.
-                  </p>
-
-                  <p className="text-gray-400 italic text-base">
-                    — The Founder (name + photo coming soon)
-                  </p>
+            {/* Facilitator Card 2 */}
+            <div className="bg-brand-surface rounded-3xl p-8 hover:shadow-2xl transition-all h-full flex flex-col">
+              {/* Photo placeholder */}
+              <div className="bg-accent-secondary/5 rounded-2xl aspect-square flex items-center justify-center mb-6 border border-brand-border">
+                <div className="text-center">
+                  <div className="text-5xl mb-2">👤</div>
+                  <p className="text-body-sm text-brand-muted/70">Photo</p>
                 </div>
+              </div>
+
+              <h3 className="text-h3 mb-2">Marcus Chen</h3>
+              <p className="text-accent-secondary font-semibold text-body-sm mb-4">Somatic Practitioner & Circle Guide</p>
+
+              <div className="space-y-3 mb-6 text-body-sm text-brand-muted">
+                <p><span className="text-brand-muted/70">Member since:</span> March 2024</p>
+                <p><span className="text-brand-muted/70">Facilitator since:</span> November 2024</p>
+              </div>
+
+              <div className="mb-6">
+                <p className="text-body-sm font-semibold text-brand-muted/70 mb-2">Offers:</p>
+                <ul className="space-y-1 text-body-sm text-brand-muted">
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent-secondary mt-1">•</span>
+                    <span>Somatic healing circles</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent-secondary mt-1">•</span>
+                    <span>Breathwork & body-based sessions</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent-secondary mt-1">•</span>
+                    <span>Nervous system regulation support</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-6">
+                <p className="text-body-sm font-semibold text-brand-muted/70 mb-1">Focus:</p>
+                <p className="text-body-sm text-brand-muted">Somatic experiencing, breathwork, nervous system healing</p>
+              </div>
+
+              <div className="mt-auto pt-6 border-t border-brand-border">
+                <p className="text-body-sm text-brand-muted italic leading-relaxed">
+                  "Learning to facilitate while healing myself was the most transformative path. Now I witness others finding their bodies again. It's sacred work."
+                </p>
+              </div>
+            </div>
+
+            {/* Facilitator Card 3 */}
+            <div className="bg-brand-surface rounded-3xl p-8 hover:shadow-2xl transition-all h-full flex flex-col">
+              {/* Photo placeholder */}
+              <div className="bg-accent-gold/5 rounded-2xl aspect-square flex items-center justify-center mb-6 border border-brand-border">
+                <div className="text-center">
+                  <div className="text-5xl mb-2">👤</div>
+                  <p className="text-body-sm text-brand-muted/70">Photo</p>
+                </div>
+              </div>
+
+              <h3 className="text-h3 mb-2">River Thompson</h3>
+              <p className="text-accent-gold font-semibold text-body-sm mb-4">Energy Work & Integration Guide</p>
+
+              <div className="space-y-3 mb-6 text-body-sm text-brand-muted">
+                <p><span className="text-brand-muted/70">Member since:</span> February 2024</p>
+                <p><span className="text-brand-muted/70">Facilitator since:</span> September 2024</p>
+              </div>
+
+              <div className="mb-6">
+                <p className="text-body-sm font-semibold text-brand-muted/70 mb-2">Offers:</p>
+                <ul className="space-y-1 text-body-sm text-brand-muted">
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent-gold mt-1">•</span>
+                    <span>Energy clearing circles</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent-gold mt-1">•</span>
+                    <span>Integration support sessions</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent-gold mt-1">•</span>
+                    <span>Plant medicine integration</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mb-6">
+                <p className="text-body-sm font-semibold text-brand-muted/70 mb-1">Focus:</p>
+                <p className="text-body-sm text-brand-muted">Energy work, plant medicine integration, spiritual emergence</p>
+              </div>
+
+              <div className="mt-auto pt-6 border-t border-brand-border">
+                <p className="text-body-sm text-brand-muted italic leading-relaxed">
+                  "I came here broken from a difficult ceremony. The community held me. Now I hold space for others integrating their own spiritual awakenings."
+                </p>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Section 2: Current Facilitators */}
-        <section className="py-32 px-4 bg-cosmic-dark/50">
-          <div className="container mx-auto max-w-6xl">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-warm-purple to-cosmic-violet bg-clip-text text-transparent">
-                Meet Our Facilitators
-              </h2>
-              <p className="text-xl text-gray-300">
-                These are the humans holding space for our circles. They started as members. Now they teach.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Facilitator Card 1 */}
-              <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-warm-purple to-cosmic-violet rounded-2xl blur opacity-20 group-hover:opacity-30 transition"></div>
-                <div className="relative bg-white/5 rounded-2xl p-8 border border-warm-purple/30 hover:border-warm-purple/50 transition-all h-full flex flex-col">
-                  {/* Photo placeholder */}
-                  <div className="bg-white/5 rounded-xl aspect-square flex items-center justify-center mb-6 border border-warm-purple/20">
-                    <div className="text-center">
-                      <div className="text-5xl mb-2">👤</div>
-                      <p className="text-xs text-gray-500">Photo</p>
-                    </div>
-                  </div>
-
-                  <h3 className="text-2xl font-bold text-white mb-2">Sarah Martinez</h3>
-                  <p className="text-warm-purple font-semibold text-sm mb-4">Circle Facilitator & 1-on-1 Practitioner</p>
-
-                  <div className="space-y-3 mb-6 text-sm text-gray-400">
-                    <p><span className="text-gray-500">Member since:</span> January 2024</p>
-                    <p><span className="text-gray-500">Facilitator since:</span> October 2024</p>
-                  </div>
-
-                  <div className="mb-6">
-                    <p className="text-sm font-semibold text-gray-400 mb-2">Offers:</p>
-                    <ul className="space-y-1 text-sm text-gray-300">
-                      <li className="flex items-start gap-2">
-                        <span className="text-warm-purple mt-1">•</span>
-                        <span>Weekly shadow work circles</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-warm-purple mt-1">•</span>
-                        <span>1-on-1 deep dive sessions</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-warm-purple mt-1">•</span>
-                        <span>Text support packages</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div className="mb-6">
-                    <p className="text-sm font-semibold text-gray-400 mb-1">Focus:</p>
-                    <p className="text-sm text-gray-300">Shadow work, somatic healing, ancestral patterns</p>
-                  </div>
-
-                  <div className="mt-auto pt-6 border-t border-white/10">
-                    <p className="text-sm text-gray-300 italic leading-relaxed">
-                      "I joined to heal my own trauma. Now I get to hold space for others doing the same work. This lineage saved my life, and now I'm passing it forward."
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Facilitator Card 2 */}
-              <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-warm-purple to-cosmic-violet rounded-2xl blur opacity-20 group-hover:opacity-30 transition"></div>
-                <div className="relative bg-white/5 rounded-2xl p-8 border border-warm-purple/30 hover:border-warm-purple/50 transition-all h-full flex flex-col">
-                  {/* Photo placeholder */}
-                  <div className="bg-white/5 rounded-xl aspect-square flex items-center justify-center mb-6 border border-warm-purple/20">
-                    <div className="text-center">
-                      <div className="text-5xl mb-2">👤</div>
-                      <p className="text-xs text-gray-500">Photo</p>
-                    </div>
-                  </div>
-
-                  <h3 className="text-2xl font-bold text-white mb-2">Marcus Chen</h3>
-                  <p className="text-warm-purple font-semibold text-sm mb-4">Somatic Practitioner & Circle Guide</p>
-
-                  <div className="space-y-3 mb-6 text-sm text-gray-400">
-                    <p><span className="text-gray-500">Member since:</span> March 2024</p>
-                    <p><span className="text-gray-500">Facilitator since:</span> November 2024</p>
-                  </div>
-
-                  <div className="mb-6">
-                    <p className="text-sm font-semibold text-gray-400 mb-2">Offers:</p>
-                    <ul className="space-y-1 text-sm text-gray-300">
-                      <li className="flex items-start gap-2">
-                        <span className="text-warm-purple mt-1">•</span>
-                        <span>Somatic healing circles</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-warm-purple mt-1">•</span>
-                        <span>Breathwork & body-based sessions</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-warm-purple mt-1">•</span>
-                        <span>Nervous system regulation support</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div className="mb-6">
-                    <p className="text-sm font-semibold text-gray-400 mb-1">Focus:</p>
-                    <p className="text-sm text-gray-300">Somatic experiencing, breathwork, nervous system healing</p>
-                  </div>
-
-                  <div className="mt-auto pt-6 border-t border-white/10">
-                    <p className="text-sm text-gray-300 italic leading-relaxed">
-                      "Learning to facilitate while healing myself was the most transformative path. Now I witness others finding their bodies again. It's sacred work."
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Facilitator Card 3 */}
-              <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-warm-purple to-cosmic-violet rounded-2xl blur opacity-20 group-hover:opacity-30 transition"></div>
-                <div className="relative bg-white/5 rounded-2xl p-8 border border-warm-purple/30 hover:border-warm-purple/50 transition-all h-full flex flex-col">
-                  {/* Photo placeholder */}
-                  <div className="bg-white/5 rounded-xl aspect-square flex items-center justify-center mb-6 border border-warm-purple/20">
-                    <div className="text-center">
-                      <div className="text-5xl mb-2">👤</div>
-                      <p className="text-xs text-gray-500">Photo</p>
-                    </div>
-                  </div>
-
-                  <h3 className="text-2xl font-bold text-white mb-2">River Thompson</h3>
-                  <p className="text-warm-purple font-semibold text-sm mb-4">Energy Work & Integration Guide</p>
-
-                  <div className="space-y-3 mb-6 text-sm text-gray-400">
-                    <p><span className="text-gray-500">Member since:</span> February 2024</p>
-                    <p><span className="text-gray-500">Facilitator since:</span> September 2024</p>
-                  </div>
-
-                  <div className="mb-6">
-                    <p className="text-sm font-semibold text-gray-400 mb-2">Offers:</p>
-                    <ul className="space-y-1 text-sm text-gray-300">
-                      <li className="flex items-start gap-2">
-                        <span className="text-warm-purple mt-1">•</span>
-                        <span>Energy clearing circles</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-warm-purple mt-1">•</span>
-                        <span>Integration support sessions</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-warm-purple mt-1">•</span>
-                        <span>Plant medicine integration</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div className="mb-6">
-                    <p className="text-sm font-semibold text-gray-400 mb-1">Focus:</p>
-                    <p className="text-sm text-gray-300">Energy work, plant medicine integration, spiritual emergence</p>
-                  </div>
-
-                  <div className="mt-auto pt-6 border-t border-white/10">
-                    <p className="text-sm text-gray-300 italic leading-relaxed">
-                      "I came here broken from a difficult ceremony. The community held me. Now I hold space for others integrating their own spiritual awakenings."
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+      {/* Section 3: Facilitators-in-Training */}
+      <section className="py-24 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-h1 mb-6">
+              Facilitators-in-Training
+            </h2>
+            <p className="text-body-lg text-brand-muted">
+              These members are learning to hold space. They're co-facilitating circles, receiving mentorship, and preparing to teach.
+            </p>
           </div>
-        </section>
 
-        {/* Section 3: Facilitators-in-Training */}
-        <section className="py-32 px-4">
-          <div className="container mx-auto max-w-6xl">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-cosmic-integration to-warm-purple bg-clip-text text-transparent">
-                Facilitators-in-Training
-              </h2>
-              <p className="text-xl text-gray-300">
-                These members are learning to hold space. They're co-facilitating circles, receiving mentorship, and preparing to teach.
-              </p>
-            </div>
-
-            <div className="space-y-8">
-              {/* Training Story 1 */}
-              <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-cosmic-integration to-warm-purple rounded-2xl blur opacity-20 group-hover:opacity-30 transition"></div>
-                <div className="relative bg-white/5 rounded-2xl border border-cosmic-integration/30 hover:border-cosmic-integration/50 transition-all">
-                  <div className="grid md:grid-cols-5 gap-6 p-8">
-                    {/* Photo left */}
-                    <div className="md:col-span-1">
-                      <div className="bg-white/5 rounded-xl aspect-square flex items-center justify-center border border-cosmic-integration/20">
-                        <div className="text-center">
-                          <div className="text-4xl mb-1">👤</div>
-                          <p className="text-xs text-gray-500">Photo</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Content right */}
-                    <div className="md:col-span-4 space-y-4">
-                      <div>
-                        <h3 className="text-2xl font-bold text-white mb-1">Alex Chen</h3>
-                        <p className="text-cosmic-integration font-semibold text-sm">Facilitator-in-Training</p>
-                      </div>
-
-                      <div className="flex gap-6 text-sm text-gray-400">
-                        <p><span className="text-gray-500">Member since:</span> June 2024</p>
-                        <p><span className="text-gray-500">Training since:</span> December 2024</p>
-                      </div>
-
-                      <div>
-                        <p className="text-sm font-semibold text-gray-400 mb-2">Currently:</p>
-                        <ul className="space-y-2 text-sm text-gray-300">
-                          <li className="flex items-start gap-2">
-                            <span className="text-cosmic-integration mt-1">•</span>
-                            <span>Co-facilitating circles with mentor Sarah</span>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <span className="text-cosmic-integration mt-1">•</span>
-                            <span>Learning trauma-informed facilitation practices</span>
-                          </li>
-                          <li className="flex items-start gap-2">
-                            <span className="text-cosmic-integration mt-1">•</span>
-                            <span>Building my own facilitation voice and style</span>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <div className="pt-4 border-t border-white/10">
-                        <p className="text-gray-300 italic leading-relaxed">
-                          "I never thought I could hold space for others. But after healing myself for 6 months, I felt the call to give back. The training is challenging and beautiful. I'm learning that I don't need to be 'healed' to facilitate—I just need to be honest about where I am."
-                        </p>
-                      </div>
+          <div className="space-y-8">
+            {/* Training Story 1 */}
+            <div className="bg-brand-surface rounded-3xl hover:shadow-2xl transition-all">
+              <div className="grid md:grid-cols-5 gap-6 p-8">
+                {/* Photo left */}
+                <div className="md:col-span-1">
+                  <div className="bg-accent-primary/5 rounded-2xl aspect-square flex items-center justify-center border border-brand-border">
+                    <div className="text-center">
+                      <div className="text-4xl mb-1">👤</div>
+                      <p className="text-body-sm text-brand-muted/70">Photo</p>
                     </div>
                   </div>
                 </div>
+
+                {/* Content right */}
+                <div className="md:col-span-4 space-y-4">
+                  <div>
+                    <h3 className="text-h3 mb-1">Alex Chen</h3>
+                    <p className="text-accent-primary font-semibold text-body-sm">Facilitator-in-Training</p>
+                  </div>
+
+                  <div className="flex gap-6 text-body-sm text-brand-muted">
+                    <p><span className="text-brand-muted/70">Member since:</span> June 2024</p>
+                    <p><span className="text-brand-muted/70">Training since:</span> December 2024</p>
+                  </div>
+
+                  <div>
+                    <p className="text-body-sm font-semibold text-brand-muted/70 mb-2">Currently:</p>
+                    <ul className="space-y-2 text-body-sm text-brand-muted">
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent-primary mt-1">•</span>
+                        <span>Co-facilitating circles with mentor Sarah</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent-primary mt-1">•</span>
+                        <span>Learning trauma-informed facilitation practices</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent-primary mt-1">•</span>
+                        <span>Building my own facilitation voice and style</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="pt-4 border-t border-brand-border">
+                    <p className="text-brand-muted italic leading-relaxed text-body">
+                      "I never thought I could hold space for others. But after healing myself for 6 months, I felt the call to give back. The training is challenging and beautiful. I'm learning that I don't need to be 'healed' to facilitate—I just need to be honest about where I am."
+                    </p>
+                  </div>
+                </div>
               </div>
+            </div>
 
               {/* Training Story 2 */}
               <div className="relative group">
@@ -475,13 +418,13 @@ function CommunityPage() {
                     </div>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Section 4: Member Stories */}
-        <section className="py-32 px-4 bg-cosmic-dark/50">
+      {/* Section 4: Member Stories */}
+      <section className="py-32 px-4 bg-cosmic-dark/50">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-warm-coral to-warm-gold bg-clip-text text-transparent">
@@ -628,10 +571,10 @@ function CommunityPage() {
               </p>
             </div>
           </div>
-        </section>
+      </section>
 
-        {/* Section 5: The Lineage - Ripple Effect */}
-        <section className="py-32 px-4">
+      {/* Section 5: The Lineage - Ripple Effect */}
+      <section className="py-32 px-4">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-warm-gold to-cosmic-integration bg-clip-text text-transparent">
@@ -732,10 +675,10 @@ function CommunityPage() {
               </div>
             </div>
           </div>
-        </section>
+      </section>
 
-        {/* Section 6: Who Joins (Updated) */}
-        <section className="py-32 px-4 bg-cosmic-dark/50">
+      {/* Section 6: Who Joins (Updated) */}
+      <section className="py-32 px-4 bg-cosmic-dark/50">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-warm-coral to-warm-purple bg-clip-text text-transparent">
@@ -838,10 +781,10 @@ function CommunityPage() {
               </div>
             </div>
           </div>
-        </section>
+      </section>
 
-        {/* Section 7: The Vibe (Updated) */}
-        <section className="py-32 px-4">
+      {/* Section 7: The Vibe (Updated) */}
+      <section className="py-32 px-4">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-warm-purple to-cosmic-violet bg-clip-text text-transparent">
@@ -905,10 +848,10 @@ function CommunityPage() {
               </div>
             </div>
           </div>
-        </section>
+      </section>
 
-        {/* Section 8: Testimonials by Stage */}
-        <section className="py-32 px-4 bg-cosmic-dark/50">
+      {/* Section 8: Testimonials by Stage */}
+      <section className="py-32 px-4 bg-cosmic-dark/50">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-warm-gold to-warm-coral bg-clip-text text-transparent">
@@ -1053,40 +996,9 @@ function CommunityPage() {
               </p>
             </div>
           </div>
-        </section>
+      </section>
 
-        {/* Footer */}
-        <footer className="container mx-auto px-4 py-16 border-t border-white/5">
-          <div className="max-w-6xl mx-auto text-center space-y-6">
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <Sparkles className="w-8 h-8 text-cosmic-violet" />
-              <span className="text-xl font-bold bg-gradient-to-r from-cosmic-violet via-purple-400 to-cosmic-integration bg-clip-text text-transparent">
-                Inner Ascend
-              </span>
-            </div>
-
-            <div className="flex items-center justify-center gap-6 text-sm flex-wrap">
-              <Link to="/" className="text-gray-400 hover:text-cosmic-violet transition-colors">Home</Link>
-              <span className="text-gray-700">•</span>
-              <Link to="/journey" className="text-gray-400 hover:text-cosmic-violet transition-colors">The Journey</Link>
-              <span className="text-gray-700">•</span>
-              <Link to="/community" className="text-gray-400 hover:text-cosmic-violet transition-colors">Community</Link>
-              <span className="text-gray-700">•</span>
-              <Link to="/membership" className="text-gray-400 hover:text-cosmic-violet transition-colors">Membership</Link>
-              <span className="text-gray-700">•</span>
-              <Link to="/practice" className="text-gray-400 hover:text-cosmic-violet transition-colors">Practice</Link>
-              <span className="text-gray-700">•</span>
-              <Link to="/about" className="text-gray-400 hover:text-cosmic-violet transition-colors">About</Link>
-              <span className="text-gray-700">•</span>
-              <Link to="/support" className="text-gray-400 hover:text-cosmic-violet transition-colors">Support</Link>
-              <span className="text-gray-700">•</span>
-              <Link to="/privacy" className="text-gray-400 hover:text-cosmic-violet transition-colors">Privacy</Link>
-            </div>
-
-            <p className="text-sm text-gray-600">© 2025 Inner Ascend • Being Human 101</p>
-          </div>
-        </footer>
-      </div>
+      <Footer />
     </div>
   );
 }
